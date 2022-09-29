@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-task {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+@media (min-width: 768px) {
+  .grid-task {
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+  }
+}
